@@ -360,7 +360,7 @@ En esta etapa del proyecto contamos ya con un prompt validado y el corpus comple
 
 ### 5.1 Muestra estratificada por años
 
-Se proponen para analizar los pfs siguientes:
+Se proponen para analizar los pdfs siguientes:
 
     "1807": [73, 124, 140, 156, 167, 182, 190, 201, 215, 230, 245, 267, 278, 290, 301, 322, 340, 351],
     "1808": [15, 34, 52, 78, 95, 112, 145, 167, 189, 210, 234, 256, 278, 290, 312, 334, 347],
@@ -386,7 +386,7 @@ Se proponen para analizar los pfs siguientes:
 
 ## 6. IA para el procesado del dataset
 
-Se decide usar el modelo Sonnet 4.5 con pensamiento extedido y se crean las salidas para los ejemplares, siguiendo estos pasos:
+Se decide usar el modelo Sonnet 4.5 con pensamiento extendido y se crean las salidas para los ejemplares, siguiendo estos pasos:
 
 ### 6.1 Procesado masivo de todos los pdf
 
@@ -413,10 +413,10 @@ for file in *_batch_output.txt; do     grep -oP '```json\K.*?(?=```)' "$file" | 
 
 En esta fase, disponemos del prompt validado, los resultados procesados para cada ejemplar. El siguiente objetivo consiste en proporcionar a los expertos una herramienta efectiva para validar los resultados. Con este fin se ha diseñado una interfaz web que ofrece las siguientes funcionalidades:
 
-- Visualización de resultados por ejemplar
-- Consulta simultánea de los documentos PDF originales
-- Desplazamiento independiente por resultados y documentos
-- Navegación directa a páginas específicas donde aparecen noticias literarias o artísticas
+- Visualización de resultados por ejemplar.
+- Consulta simultánea de los documentos PDF originales.
+- Desplazamiento independiente por resultados y documentos.
+- Navegación directa las páginas concretas donde aparecen noticias literarias o artísticas.
 
 Al tratarse de datos estructurados en formato JSON, la solución implementada consiste en una única página web reutilizable para cada año. La interfaz muestra el resultado de añalizar cada ejemplar junto con enlaces tanto al pdf completo como a la página concreta de cada hallazgo.
 
