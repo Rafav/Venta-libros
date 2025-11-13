@@ -16,13 +16,11 @@ La selección del Diario Mercantil de Cádiz como objeto de análisis fue determ
 
 Esta publicación, que abarca desde 1807 hasta 1830, comprende 7.456 ejemplares con un total de 37.381 páginas. Constituye un conjunto documental idóneo por diversos motivos:
 
-**a)** Es un periódico generalista con amplia variedad temática (noticias económicas, culturales y sociales).
+**a)** Es un periódico generalista con amplia variedad temática (noticias económicas, culturales y sociales) a la vez que un de marcado enfoque mercantil.
 
 **b)** Cubre un período histórico crucial como la Guerra de la Independencia, donde la vida cotidiana experimentó alteraciones significativas, incluyendo interrupciones en la actividad cultural.
 
-**c)** Presenta etapas de suspensión temporal de actividades teatrales y otras diversiones públicas por motivos diversos, como los períodos de Cuaresma.
-
-**d)** Ofrece ejemplares digitalizados de buena calidad para el procesamiento automatizado.
+**c)** Ofrece ejemplares digitalizados de buena calidad para el procesamiento automatizado.
 
 
 ## 3. Diseño del prompt inicial
