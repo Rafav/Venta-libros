@@ -26,7 +26,7 @@ Identifica TODAS las referencias a **venta** de material impreso en el documento
 - Revistas y publicaciones periódicas en venta
 - Folletos e impresos en venta
 - Cualquier material bibliográfico ofrecido para la venta
-**Requisito crítico**: Extrae únicamente anuncios de venta, NO reseñas, menciones o noticias sin intención comercial. No omitas ningún anuncio de venta, por breve que sea.
+**Requisito crítico**: Extrae únicamente anuncios de venta de material impreso, NO reseñas, menciones o noticias sin intención comercial. No omitas ningún anuncio de venta, por breve que sea.
 ## FORMATO DE SALIDA
 Devuelve ÚNICAMENTE un objeto JSON válido con esta estructura exacta:
 ```json
@@ -49,12 +49,34 @@ Devuelve ÚNICAMENTE un objeto JSON válido con esta estructura exacta:
   ]
 }
 ```
-## INSTRUCCIONES ESPECÍFICAS
-1. **Autor/Traductor**: Extrae solo el nombre, omitiendo fórmulas como "autor de...", "traductor de...", "compuesta por...", etc.
-2. **Transcripción**: Incluye el texto literal y completo del anuncio de venta. Mínimo: el párrafo completo donde aparece.
-3. **Verificación doble**: Revisa el documento dos veces para asegurar que no se omite ningún anuncio de venta.
-4. **Campos nulos**: Si un campo no tiene información, usa `null` en lugar de omitir el campo.
-5. **No añadas texto adicional**: Solo el JSON, sin explicaciones, comentarios o texto previo/posterior.
+INSTRUCCIONES ESPECÍFICAS
+
+Autor/Traductor: Extrae solo el nombre, omitiendo fórmulas como "autor de...", "traductor de...", "compuesta por...", etc.
+Transcripción:
+
+Incluye el texto literal y completo de CADA anuncio de venta individual
+CRÍTICO: Identifica correctamente dónde termina un anuncio y comienza otro
+Cada anuncio debe ser una unidad semántica completa (con inicio y fin claros)
+Si varios productos se anuncian en el mismo párrafo, sepáralos en entradas diferentes
+Busca marcadores de separación: precios finales, cambios de tema, nuevos títulos, frases como "También hay...", "Asimismo se vende..."
+
+
+Separación de anuncios múltiples:
+
+Si un párrafo contiene múltiples obras en venta, créa una entrada separada para cada una
+Cada entrada debe contener solo la información relevante a ese producto específico
+No mezcles información de diferentes productos en una sola transcripción
+
+
+Verificación doble: Revisa el documento dos veces para asegurar que:
+
+No se omite ningún anuncio de venta de libros
+Cada anuncio está completo y correctamente delimitado
+No hay texto de un anuncio mezclado con otro
+
+
+Campos nulos: Si un campo no tiene información, usa null en lugar de omitir el campo.
+No añadas texto adicional: Solo el JSON, sin explicaciones, comentarios o texto previo/posterior.
     """
 
     client = anthropic.Anthropic()
