@@ -329,23 +329,23 @@ _[Continúa la lista para todos los años hasta 1830]_
 
 Se decide usar el modelo Sonnet 4.5 con pensamiento extedido y se crean las salidas para los ejemplares:
 
-### Se procesan masivamente todos los pdf
+### 6.1 Procesado masivo de todos los pdf
 
 
 ```
 for file in *.pdf;  do     if [ -f "$file" ];      then        python3  ../batch-libros-diario-Madrid-sonnet-extendido_v06.py --file_name "$file" --custom_id "$(basename "$file" .pdf)"> $(basename "$file" .pdf)_batch_order.txt; fi; done
 ```
 
-### 6.2 Se recuperan los resultados
+### 6.2 Recuperación de los resultados
 
 for file in *_batch_order.txt; do     if [ -f "$file" ]; then         id=$(grep -o "msgbatch_[[:alnum:]]\+" "$file");                  output_file=$(basename "$file" "_batch_order.txt")_batch_output.txt;                  if [ ! -z "$id" ]; then             echo "Procesando archivo $file con ID: $id";             echo "Guardando resultado en: $output_file";             python ../../recuperar_batch.py "$id" > "$output_file";         else             echo "No se encontró ID en el archivo $file";         fi;     fi; done
 
-### 6.3 se extraen los datos JSON de cada pdf
+### 6.3 Extracción de los datos JSON de cada pdf
 
 for file in *_batch_output.txt; do     grep -oP '```json\K.*?(?=```)' "$file" |     sed 's/\\n/\n/g; s/\\"/"/g; s/\\\\/\\/g; s/\\'\''/'\''/g' |     python3 -c "import json,sys; json.dump(json.load(sys.stdin), sys.stdout, ensure_ascii=False, indent=2)"     > "${file%_batch_output.txt}.json"; done
 
 
-### 6.4 Se unen las salidas de cada año
+### 6.4 Generación de salida de los resultados de cada año
 
 ```
 ./combinar_json_add_ejemplares.sh    
