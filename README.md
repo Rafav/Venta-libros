@@ -12,7 +12,7 @@ Este artículo detalla cómo la Inteligencia Artificial permite localizar e iden
 
 ## 2. Caso de estudio: Diario Mercantil de Cádiz
 
-La selección del Diario Mercantil de Cádiz como objeto de análisis fue determinada por los [profesores Jaime Galbarro](https://www.jaimegalbarro.com/)  y Carlos Collantes de las universidades de Sevilla y Córdoba respectivamente, **en el contexto de investigación de.....** Los ejemplares se encuentran disponibles en formato digital en el [portal de Prensa Histórica](https://prensahistorica.mcu.es/es/publicaciones/numeros_por_mes.do?idPublicacion=3625).
+La selección del Diario Mercantil de Cádiz como objeto de análisis fue determinada por los profesores [Jaime Galbarro](https://www.jaimegalbarro.com/)  y [Carlos Collantes](https://www.uco.es/investigacion/proyectos/phebo/es/equipo/carlos-m-collantes-s%C3%A1nchez) de las universidades de Sevilla y Córdoba respectivamente, **en el contexto de investigación de.....** Los ejemplares se encuentran disponibles en formato digital en el [portal de Prensa Histórica](https://prensahistorica.mcu.es/es/publicaciones/numeros_por_mes.do?idPublicacion=3625).
 
 Esta publicación, que abarca desde 1807 hasta 1830, comprende 7.456 ejemplares con un total de 37.381 páginas. Constituye un conjunto documental idóneo por diversos motivos:
 
@@ -33,11 +33,11 @@ La implementación de IA en este proyecto ha tenido en cuenta dos consideracione
 
 **b)** La importancia de obtener información sistemática y exhaustiva, sin omisión de referencias relevantes.
 
-Resulta prioritario minimizar posibles alucinaciones en los resultados. Las pruebas realizadas con modelos como Qwen y Claude revelaron que disponemos de soluciones bastante fiables para el procesamiento integral de prensa histórica. Herramientas especializadas en reconocimiento óptico de caracteres (OCR) como Transkribus, eScriptorium o Surya ofrecen buenos resultados en la transcripción pero no están diseñadas para la localización automática de ventas y menos aún en la extracción de los distintos campos a estudiar: título, autor, formato, tomos, encuadernación, precio, lugares de venta y la transcripción literal de la información.
+Las pruebas realizadas con modelos como Qwen y Claude revelaron que disponemos de soluciones bastante fiables para el procesamiento integral de prensa histórica. Herramientas especializadas en reconocimiento óptico de caracteres (OCR) como Transkribus, eScriptorium o Surya ofrecen buenos resultados en la transcripción pero no están diseñadas para la localización automática de ventas y menos aún en la extracción de los distintos campos a estudiar: título, autor, formato, tomos, encuadernación, precio, lugares de venta y la transcripción literal de la información. Por ello se opta por el uso de LLM (modelos grandes de lenguaje) para localizar y extraer la información relevante. 
 
 Con el objetivo de optimizar la utilidad de los datos extraídos, se ha establecido que los resultados proporcionados por la IA deben presentarse normalizados y organizados sistemáticamente, a fin de facilitar búsquedas posteriores, filtrados y la localización ágil de hallazgos relevantes.
 
-Partiendo de estas consideraciones, se seleccionaron 6 ejemplares al azar, y se analizaron a mano. Con estos datos se analizan los sucesivos prompts y modelos.
+Partiendo de estas consideraciones, se seleccionaron 6 ejemplares al azar, y se analizaron de foram manual para comprobar la calidad de las salidas de los modelos y los sucesivos prompts. 
 
 Se parte de un prompt simple y básico, que sirve para conocer cómo interpretan los modelos la pregunta y la calidad de las respuestas.
 
@@ -47,7 +47,7 @@ Se genera una primera selección de modelos candiatos y descartados.
 
 
 
-Una vez seleccionados modelos candidatos se continua con la fase de refinar el prompt, creando hasta 6 versiones.
+Una vez seleccionados los modelos candidatos se continua con la fase de refinar el prompt, creando hasta 6 versiones.
 
 
 
