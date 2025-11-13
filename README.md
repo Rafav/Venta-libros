@@ -43,15 +43,54 @@ Se parte de un prompt simple y básico, que sirve para conocer cómo interpretan
 
 *Localiza sistemáticamente toda referencia a venta, anuncio, catálogo, reseña o mención de libros, folletos, impresos, obras literarias o publicaciones periódicas, por pequeña que sea. Devuelve exclusivamente un JSON con los campos autor    traductor    título    número_de_tomos    formato    encuadernación    precio    lugares_de_venta    día_periódico    que figura en el pdf, página del pdf del hallazgo y números de página del periódico, transcripción con la transcripción literal de la noticia.  Doble check. La autoría  puede incluir fórmulas como 'autor de...', 'traductor de...', ..'compuesta por..' etc. en cuyo caso omite la fórmula.*
 
-Se genera una primera selección de modelos candiatos y descartados.
 
 
-Una vez seleccionados los modelos candidatos se continua con la fase de refinar el prompt, creando hasta [6 versiones distintas](https://github.com/Rafav/Venta-libros/tree/main/prompts).
+Se comienza con un ejemplar del 1829_07_10
+### 3.1 Claude
+
+1)[prompt simple con Sonnet 4.5 sin pensamiento extendido.](https://claude.ai/share/58a9bbaa-187f-47be-943a-ab9a11b823a7)
+2)[prompt exhaustivo con Sonnet 4.5 sin pensamiento extendido, que no reconoce nada. [Si manualmente le indico el hallazgo, sí lo procesa.]( https://claude.ai/chat/9493fa73-472b-4772-8b5a-5624fd23420e) Este modelo queda descartado para automatizar.
+3)[prompt exhaustivo con Sonnet 4.5 con pensamiento extendido.](https://claude.ai/share/d4b953de-93af-46c2-bc4e-fa7c95b76039)
+4)[prompt exhaustivo con Sonnet 4.5 con pensamiento extendido, analizando ela transcripción obtenida previamente](https://claude.ai/share/50ba4406-395a-4c4f-8d4b-f5f4c2dfa51e)
+
+
+La diferencia entre 3 y 4 es que se pierde la referencia visual,  por ejemplo:
+```
+ "extension_anuncio_lineas": 3,
+    "posicion_en_pagina": "centro, dentro de la sección de avisos",
+    "elementos_tipograficos_destacados": [],
+    "acompañamiento_visual": "",
+```
+
+### 3.2 QWen
+Se analiza con Qwen-3-vl y aunque parece que los resultados son similares se descarta porque la transcripción es peor: 
+
+[Qwen3-VL-235B-A22B salida simple](https://chat.qwen.ai/s/bd609038-1799-4c71-ad89-923aba6fa79b?fev=0.0.237) 
+[Qwen3-VL-235B-A22B salida compleja](https://chat.qwen.ai/s/f6dc53af-e0b6-4843-a0f2-2b2a55c63e3c?fev=0.0.237)
+
+
+### 3.3 Refinamiento del prompt.
+
+Una vez seleccionados los modelos candidatos (Sonnet 4.5 con y sin pensamiento extendido) se continua con la fase de refinar el prompt, creando hasta [6 versiones distintas](https://github.com/Rafav/Venta-libros/tree/main/prompts).
 
 Los resultados pueden compararse en estos enlaces:
+ 
+#### 6 pdf validados manualmente
+
+[Comparativa](https://github.com/Rafav/Venta-libros/blob/main/validacion-manual/comparativa.ods)
 
 
-El prompt final es el siguiente:
+#### 1807
+
+
+[V01](https://rafav.github.io/diariomercantil/1807/ventas_prompt_v01.html)
+[V02](https://rafav.github.io/diariomercantil/1807/ventas_prompt_v02.html)
+[V03](https://rafav.github.io/diariomercantil/1807/ventas_v03.html)
+[V04](https://rafav.github.io/diariomercantil/1807/ventas_v04.html)
+[V05](https://rafav.github.io/diariomercantil/1807/ventas_prompt_v05.html)
+[V06 extendida](https://rafav.github.io/diariomercantil/1807/ventas_v06_extendida.html)
+
+Finalmente se opta por usar Sonnet 4.5 con pensamiento exendido y como prompt final:
 
 ```
 # TAREA: Extracción exhaustiva de anuncios de venta de material impreso
