@@ -46,9 +46,9 @@ Se parte de un prompt simple y básico, que sirve para conocer cómo interpretan
 Se genera una primera selección de modelos candiatos y descartados.
 
 
+Una vez seleccionados los modelos candidatos se continua con la fase de refinar el prompt, creando hasta [6 versiones distintas](https://github.com/Rafav/Venta-libros/tree/main/prompts).
 
-Una vez seleccionados los modelos candidatos se continua con la fase de refinar el prompt, creando hasta 6 versiones.
-
+Los resultados pueden compararse en estos enlaces:
 
 
 El prompt final es el siguiente:
