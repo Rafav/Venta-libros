@@ -394,7 +394,7 @@ En esta fase, disponemos del prompt validado, los resultados procesados para cad
 - Desplazamiento independiente por resultados y documentos
 - Navegación directa a páginas específicas donde aparecen noticias literarias o artísticas
 
-Al tratarse de datos estructurados en formato JSON, la solución implementada consiste en una única página web reutilizable para cada año. La interfaz lee el archivo *combined.json* (que contiene todos los resultados agregados) y presenta la información mediante código JavaScript que itera dinámicamente sobre los datos, independientemente del año, número de ejemplares o cantidad de referencias encontradas.
+Al tratarse de datos estructurados en formato JSON, la solución implementada consiste en una única página web reutilizable para cada año. La interfaz muestra el resultado de añalizar cada ejemplar junto con enlaces tanto al pdf completo como a la página concreta de cada hallazgo.
 
 
 ## 8. Acceso a los datos
