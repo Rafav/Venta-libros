@@ -37,7 +37,28 @@ Las pruebas realizadas con modelos como Qwen y Claude revelaron que disponemos d
 
 Con el objetivo de optimizar la utilidad de los datos extraídos, se ha establecido que los resultados proporcionados por la IA deben presentarse normalizados y organizados sistemáticamente, a fin de facilitar búsquedas posteriores, filtrados y la localización ágil de hallazgos relevantes.
 
-Partiendo de estas consideraciones, se seleccionaron 6 ejemplares al azar, y se analizaron de forma manual para comprobar la calidad de las salidas de los modelos y los sucesivos prompts. 
+Partiendo de estas consideraciones, se seleccionaron 6 ejemplares al azar, y se analizaron de forma manual para comprobar la calidad de las salidas de los modelos y los sucesivos prompts. La salida obtenida tras la revisión manual es la siguiente:
+
+| Fecha | Página | Autor | Traductor | Título | Tomos | Formato | Encuadernación | Precio | Puesto de venta |
+|---|---|---|---|---|---|---|---|---|---|
+| 1807-03-20 | 3-4 (315-316) | | | Minerva. Revisor General | 4 | | | 15 rs. cada tomo | Despacho principal |
+| 1807-03-20 | 3-4 (315-316) | | | Minerva. Quadro de la Europa | 1 | | | 20 rs. cada tomo | Despacho principal |
+| 1807-03-20 | 3-4 (315-316) | | | Minerva. Cartas atenienses | 1 | | | 20 rs. cada tomo | Despacho principal |
+| 1807-03-20 | 3-4 (315-316) | | | Minerva. Londres y los ingleses | 1 | | | 20 rs. cada tomo | Despacho principal |
+| 1807-03-20 | 3-4 (315-316) | Doctor Akerlio Rapsodiano | | Ensayo de una historia de las Pelucas, de tomitos | | | | 5 rs. más 1 cuarto | Despacho principal |
+| 1807-03-27 | 4 (344) | Doctor Joseph Ruiz y Romero | | Oración funebre que en las solemnes exequias | | | | | Imprenta de Vega y compañía |
+| 1809-01-20 | 4 (80) | F. Pedro de San Josef | | Glorias militares de los españoles | 3 | Octavo | | 10 rs. de vellón | Librería de Dávila |
+| 1823-07-26 | 4 () | Say | | Tratado de economía política | 2 | 8° prolongado | rustica | 80 rs. | Librería de Igual |
+| 1823-07-26 | 4 () | Prepean | | Estenografía exacta | 1 | 8° | rustica | 50 rs. | Librería de Igual |
+| 1823-07-26 | 4 () | Thevenot | | Compendio de taquigrafía | 1 | 12° | | 18 rs. | Librería de Igual |
+| 1823-07-26 | 4 () | Vidal | | Notografía | 1 | 4° | rustica | 60 rs. | Librería de Igual |
+| 1823-07-26 | 4 () | Delavigne | | Las vísperas sicilianas tragedia | | | | 12 rs. | Librería de Igual |
+| 1823-07-26 | 4 () | Ancelot | | Luis IX tragedia | | | | 12 rs. | Librería de Igual |
+| 1829-04-24 | 6 (6) | | | El reglamento para el puerto franco de Cádiz | | | | | Imprenta García |
+| 1829-04-24 | 6 (6) | Roche y Sanson | | Nuevos elementos de patología | 5 | 4° | | | Librería de Hernando |
+| 1829-07-10 | 6 (6) | autor de Cádiz Restaurado | | Canto funebre, en la muerte de la Reyna de España Doña María Josefa | 3 rs. | | | | Imprenta García |
+
+
 
 Se parte de un prompt simple y básico, que sirve para conocer cómo interpretan los modelos la pregunta y la calidad de las respuestas.
 
@@ -49,8 +70,11 @@ Se comienza con un ejemplar del 1829_07_10
 ### 3.1 Claude
 
 1)[prompt simple con Sonnet 4.5 sin pensamiento extendido.](https://claude.ai/share/58a9bbaa-187f-47be-943a-ab9a11b823a7)
-2)[prompt exhaustivo con Sonnet 4.5 sin pensamiento extendido, que no reconoce nada. [Si manualmente le indico el hallazgo, sí lo procesa.]( https://claude.ai/chat/9493fa73-472b-4772-8b5a-5624fd23420e) Este modelo queda descartado para automatizar.
+
+2)[prompt exhaustivo con Sonnet 4.5 sin pensamiento extendido, que no reconoce nada.]( https://claude.ai/chat/9493fa73-472b-4772-8b5a-5624fd23420e) Este modelo queda descartado para automatizar.
+
 3)[prompt exhaustivo con Sonnet 4.5 con pensamiento extendido.](https://claude.ai/share/d4b953de-93af-46c2-bc4e-fa7c95b76039)
+
 4)[prompt exhaustivo con Sonnet 4.5 con pensamiento extendido, analizando ela transcripción obtenida previamente](https://claude.ai/share/50ba4406-395a-4c4f-8d4b-f5f4c2dfa51e)
 
 
