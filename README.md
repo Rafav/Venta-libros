@@ -451,4 +451,4 @@ Se ha creado un *script* (pequeño programa) que une los hallazgos y genera una 
 
 ## 10. Análisis por IA
 
-Con el cojunto de noticias de interés se pide a la IA, *Claude code* en este caso un paper sobre el mercado de libros.
+Con el cojunto de noticias de interés se pide a la IA, *Claude code* en este caso un paper sobre el mercado de libros. Se introduce al programa la siguiente instrucción *analiza libros_completo.csv y crea un paper universitario sobre la venta de libros y material impreso a partir de las noticas del Diario Mercantil de Cádiz *
