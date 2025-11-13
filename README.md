@@ -37,7 +37,7 @@ Las pruebas realizadas con modelos como Qwen y Claude revelaron que disponemos d
 
 Con el objetivo de optimizar la utilidad de los datos extraídos, se ha establecido que los resultados proporcionados por la IA deben presentarse normalizados y organizados sistemáticamente, a fin de facilitar búsquedas posteriores, filtrados y la localización ágil de hallazgos relevantes.
 
-Partiendo de estas consideraciones, se seleccionaron 6 ejemplares al azar, y se analizaron de foram manual para comprobar la calidad de las salidas de los modelos y los sucesivos prompts. 
+Partiendo de estas consideraciones, se seleccionaron 6 ejemplares al azar, y se analizaron de forma manual para comprobar la calidad de las salidas de los modelos y los sucesivos prompts. 
 
 Se parte de un prompt simple y básico, que sirve para conocer cómo interpretan los modelos la pregunta y la calidad de las respuestas.
 
@@ -90,7 +90,7 @@ Los resultados pueden compararse en estos enlaces:
 [V05](https://rafav.github.io/diariomercantil/1807/ventas_prompt_v05.html)
 [V06 extendida](https://rafav.github.io/diariomercantil/1807/ventas_v06_extendida.html)
 
-Finalmente se opta por usar Sonnet 4.5 con pensamiento exendido y como prompt final:
+Finalmente se opta por usar Sonnet 4.5 con pensamiento extendido y como prompt final:
 
 ```
 # TAREA: Extracción exhaustiva de anuncios de venta de material impreso
@@ -326,7 +326,7 @@ La incorporación de especialistas en informática a proyectos de Humanidades Di
 
 ### 4.1 Scrapping
 
-El término *scrapping* designa un conjunto de técnicas destinadas a extraer datos de páginas web. En el caso del portal de Prensa Histórica, los resultados de búsqueda muestran enlaces a ejemplares en formato PDF, que facilita su descarga. Esta cabecera que analizamos se había descargado previamente, enmarcado dentro de las necesidades de investigación del proyecto «La institución del "Siglo de Oro". Procesos de construcción en la prensa periódica (1801-1868). SILEM III» (PID2022-136995NB-I00), financiado por el Plan Nacional de Investigación del Ministerio de Ciencia e Innovación y dirigido por Mercedes Comellas (Universidad de Sevilla). La documentacion técnica está disponile en [Análisis de la literatura aúrea en el Diario Mercantil de Cádiz](https://github.com/Rafav/AI-HISTORICAL-NEWSPAPERS/tree/main).
+El término *scrapping* designa un conjunto de técnicas destinadas a extraer datos de páginas web. En el caso del portal de Prensa Histórica, los resultados de búsqueda muestran enlaces a ejemplares en formato PDF, que facilita su descarga. Esta cabecera que analizamos se había descargado previamente, enmarcado dentro de las necesidades de investigación del proyecto «La institución del "Siglo de Oro". Procesos de construcción en la prensa periódica (1801-1868). SILEM III» (PID2022-136995NB-I00), financiado por el Plan Nacional de Investigación del Ministerio de Ciencia e Innovación y dirigido por Mercedes Comellas (Universidad de Sevilla). La documentación técnica está disponible en [Análisis de la literatura aúrea en el Diario Mercantil de Cádiz](https://github.com/Rafav/AI-HISTORICAL-NEWSPAPERS/tree/main).
 
 
 
@@ -336,40 +336,35 @@ En esta etapa del proyecto contamos ya con un prompt validado y el corpus comple
 
 ### 5.1 Muestra estratificada por años
 
-#### Sin fecha
-- 1 (único ejemplar)
+Se proponen para analizar los pfs siguientes:
 
-#### 1807 (18 ejemplares)
-73, 124, 140, 156, 167, 182, 190, 201, 215, 230, 245, 267, 278, 290, 301, 322, 340, 351
-
-#### 1808 (17 ejemplares)
-15, 34, 52, 78, 95, 112, 145, 167, 189, 210, 234, 256, 278, 290, 312, 334, 347
-
-#### 1809 (18 ejemplares)
-21, 45, 67, 89, 112, 134, 156, 178, 200, 223, 245, 267, 289, 301, 323, 334, 345, 358
-
-#### 1810 (16 ejemplares)
-23, 45, 67, 89, 112, 134, 156, 178, 201, 223, 245, 267, 289, 301, 312, 323
-
-#### 1811 (17 ejemplares)
-22, 44, 67, 89, 111, 133, 156, 178, 200, 222, 245, 267, 289, 311, 333, 345, 355
-
-#### 1812 (16 ejemplares)
-21, 43, 65, 87, 109, 131, 154, 176, 198, 220, 242, 264, 286, 308, 330, 335
-
-#### 1816 (6 ejemplares)
-12, 34, 56, 78, 98, 112
-
-_[Continúa la lista para todos los años hasta 1830]_
+    "1807": [73, 124, 140, 156, 167, 182, 190, 201, 215, 230, 245, 267, 278, 290, 301, 322, 340, 351],
+    "1808": [15, 34, 52, 78, 95, 112, 145, 167, 189, 210, 234, 256, 278, 290, 312, 334, 347],
+    "1809": [21, 45, 67, 89, 112, 134, 156, 178, 200, 223, 245, 267, 289, 301, 323, 334, 345, 358],
+    "1810": [23, 45, 67, 89, 112, 134, 156, 178, 201, 223, 245, 267, 289, 301, 312, 323],
+    "1811": [22, 44, 67, 89, 111, 133, 156, 178, 200, 222, 245, 267, 289, 311, 333, 345, 355],
+    "1812": [21, 43, 65, 87, 109, 131, 154, 176, 198, 220, 242, 264, 286, 308, 330, 335],
+    "1816": [12, 34, 56, 78, 98, 112],
+    "1817": [23, 45, 67, 89, 112, 134, 156, 178, 200, 223, 245, 267, 289, 311, 323, 334, 345, 356],
+    "1818": [22, 44, 66, 88, 110, 132, 154, 176, 198, 220, 242, 264, 286, 308, 330, 342, 352, 360],
+    "1819": [21, 43, 65, 87, 109, 131, 153, 175, 197, 219, 241, 263, 285, 307, 329, 341, 353, 361],
+    "1820": [25, 48, 71, 94, 117, 140, 163, 186, 209, 232, 255, 278, 301, 324, 347, 370, 383, 396, 409, 422, 428],
+    "1821": [24, 47, 70, 93, 116, 139, 162, 185, 208, 231, 254, 277, 300, 323, 346, 369, 382, 395, 408, 421, 427],
+    "1822": [23, 45, 67, 89, 111, 133, 155, 177, 199, 221, 243, 265, 287, 309, 331, 343, 354, 362],
+    "1823": [22, 44, 66, 88, 110, 132, 154, 176, 198, 220, 242, 264, 286, 308, 330, 342, 353, 359],
+    "1824": [24, 46, 68, 90, 112, 134, 156, 178, 200, 222, 244, 266, 288, 310, 332, 344, 355, 363],
+    "1825": [23, 45, 67, 89, 111, 133, 155, 177, 199, 221, 243, 265, 287, 309, 331, 343, 354, 361],
+    "1826": [22, 44, 66, 88, 110, 132, 154, 176, 198, 220, 242, 264, 286, 308, 330, 342, 353, 360],
+    "1827": [21, 43, 65, 87, 109, 131, 153, 175, 197, 219, 241, 263, 285, 307, 329, 341, 352, 359],
+    "1828": [23, 45, 67, 89, 111, 133, 155, 177, 199, 221, 243, 265, 287, 309, 331, 343, 354, 362],
+    "1829": [22, 44, 66, 88, 110, 132, 154, 176, 198, 220, 242, 264, 286, 308, 330, 342, 353, 361],
+    "1830": [21, 43, 65, 87, 109, 131, 153, 175, 197, 219, 241, 263, 285, 307, 329, 341, 358]
 
 ## 6. IA para el procesado del dataset
 
-
-
-Se decide usar el modelo Sonnet 4.5 con pensamiento extedido y se crean las salidas para los ejemplares:
+Se decide usar el modelo Sonnet 4.5 con pensamiento extedido y se crean las salidas para los ejemplares, siguiendo estos pasos:
 
 ### 6.1 Procesado masivo de todos los pdf
-
 
 ```
 for file in *.pdf;  do     if [ -f "$file" ];      then        python3  ../batch-libros-diario-Madrid-sonnet-extendido_v06.py --file_name "$file" --custom_id "$(basename "$file" .pdf)"> $(basename "$file" .pdf)_batch_order.txt; fi; done
