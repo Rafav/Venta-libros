@@ -95,11 +95,11 @@ Se analiza con Qwen-3-vl y aunque parece que los resultados son similares se des
 
 Una vez seleccionados los modelos candidatos (Sonnet 4.5 con y sin pensamiento extendido) se continua con la fase de refinar el prompt, creando hasta [6 versiones distintas](https://github.com/Rafav/Venta-libros/tree/main/prompts).
 
-Los resultados pueden compararse en estos enlaces:
+Los resultados pueden rse en estos enlaces:
  
 #### 6 pdf validados manualmente
 
-[Comparativa](https://github.com/Rafav/Venta-libros/blob/main/validacion-manual/comparativa.ods)
+[Comparativa](validacion-manual/comparativa.ods)
 
 
 #### 1807
@@ -445,3 +445,10 @@ Se publica la muestra a validar en GitHub Pages, plataforma que permite alojar s
 [1829](https://rafav.github.io/diariomercantil/1829/ventas.html)
 [1830](https://rafav.github.io/diariomercantil/1830/ventas.html)
 
+## 9. Exportación a hoja de cálculo.
+
+Se ha creado un *script* (pequeño programa) que une los hallazgos y genera una [hoja de cálculo](libros_completo.csv) para ayudar al análisis de los hallazgos. 
+
+## 10. Análisis por IA
+
+Con el cojunto de noticias de interés se pide a la IA, *Claude code* en este caso un paper sobre el mercado de libros.
