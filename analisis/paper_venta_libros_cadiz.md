@@ -483,20 +483,29 @@ Solís, R. (1958). *El Cádiz de las Cortes: La vida en la ciudad en los años 1
 ## ANEXO: FIGURAS Y GRÁFICOS
 
 El análisis incluye las siguientes visualizaciones (archivos adjuntos):
+## ANEXO: FIGURAS Y GRÁFICOS
 
-[**Figura 1**](analisis_libros_fig1.png):
+El análisis incluye las siguientes visualizaciones:
+
+### Figura 1
+![Figura 1: Análisis general de distribuciones](analisis_libros_fig1.png)
+
 - A) Distribución de anuncios por año (1789-1896)
 - B) Distribución de precios (histograma)
 - C) Top 10 autores más publicados
 - D) Top 10 lugares de venta más frecuentes
 
-[**Figura 2**](analisis_libros_fig2.png):
+### Figura 2
+![Figura 2: Evolución temporal y formatos](analisis_libros_fig2.png)
+
 - A) Evolución de precios por año (media y mediana)
 - B) Distribución de anuncios por trimestre (agregado)
 - C) Distribución de formatos (Top 10)
 - D) Distribución de número de tomos
 
-[**Figura 3**](analisis_libros_fig3.png):
+### Figura 3
+![Figura 3: Tipos de publicaciones](analisis_libros_fig3.png)
+
 - A) Distribución por tipo de publicación
 - B) Evolución temporal de tipos principales de publicaciones
 
