@@ -474,4 +474,4 @@ g) Una cuestión de forma, ya conocida: en los objetivos están ausentes todos s
 h) No entiendo por qué se considera 1808 el período de mayor actividad con 20 anuncios, si en 1828 hubo 22. Además, en el primer caso aparece el porcentaje sobre el total y en los otros datos no se proporciona.
 
 
-Se opta por generar una [hoja de cálculo con los campos mínimos]((analisis/libros_completo_campos_minimos.csv), se eliminan la transcripción, numerós de página, números del pdf, identificador del ejemplar. Reduciendo el contexto en el que se focaliza la IA se crea [una segunda versión del paper](analisis/v02/paper_v02.pdf).
+Se opta por generar una [hoja de cálculo con los campos mínimos](analisis/libros_completo_campos_minimos.csv), se eliminan la transcripción, numerós de página, números del pdf, identificador del ejemplar. Reduciendo el contexto en el que se focaliza la IA se crea [una segunda versión del paper](analisis/v02/paper_v02.pdf).
