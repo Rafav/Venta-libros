@@ -452,3 +452,26 @@ Se ha creado un *script* (pequeño programa) que une los hallazgos y genera una 
 ## 10. Análisis por IA
 
 Con el cojunto de noticias de interés se pide a la IA, *Claude code* en este caso un paper sobre el mercado de libros. Se introduce al programa la siguiente instrucción *analiza libros_completo.csv y crea un paper universitario sobre la venta de libros y material impreso a partir de las noticas del Diario Mercantil de Cádiz * y genera el artículo [*El Comercio del Libro y Material Impreso en Cádiz durante el Periodo 1807-1830: Un Análisis a través del Diario Mercantil*](/analisis/paper_venta_libros_cadiz.md) Disponible [también en pdf](analisis/paper.pdf) para su consulta.
+
+Esta primera aproximación requiere la supervisión manual, tanto con IA pidiendo una doble validación como con las aportaciones de Carmen Fernández Romero, docente de Geografía e Historia, que son las siguientes:
+
+a) En el contexto histórico se alude al retorno de Fernando VII y con él, el absolutismo. Parece que el Sexenio Absolutista no existió. Los Golpes de Estado tienen su miga, lo mismo que sus consecuencias (el primer exilio liberal, por ejemplo). De mayor relevancia me parece que se muestre a Cádiz como si se hubiera convertido en un foco dinámico a partir de la Guerra y su papel de resistencia contra el invasor; en lugar de un proceso largo que se relaciona principalmente con su papel como sede de la Casa de la Contratación a partir de 1717, casi un siglo antes, y la importancia de las gentes que llegaron por allí.
+
+b) Aparece Juntas , la Junta Suprema, como su propio nombre indica, sólo fue una. Compuesta por 38 personas e itinerante por mor de la guerra hasta que se disolvió en el Puerto de Santa María y dio lugar a la Regencia compartida, que sólo eran 5 personas.
+
+c) *Esta literatura evidencia la persistencia de la demanda de contenidos piadosos pese al contexto de secularización política.*  El texto de la Constitución empieza invocando a la Trinidad, establece la confesionalidad del Estado y la exclusividad de la religión católica, con notable presencia de curas en las Cortes.
+
+d) *Esta producción servía a las necesidades profesionales de una ciudad portuaria y comercial.* Alude a que había desaparecido el monopolio del comercio con las Indias e incluso a los procesos de independencia que se estaban llevando a cabo que -a pesar de todo- no significó una hecatombe con respecto a lo ocurrido en los últimos tiempos coloniales.
+
+e) Pág. 9, de nuevo la ausencia del Sexenio Absolutista.
+
+f) La transformación de España en el primer tercio del XIX no fue tal; los intentos liberales paralelos al conflicto bélico fueron poco más que un ejercicio teórico, ya que tanto los Decretos promulgados por las Cortes como la propia Constitución no pudieron aplicarse: primero por la ausencia de jurisdicción en los territorios ocupados por los franceses, y luego por el retorno de Fernando VII y su inaplicabilidad.
+
+
+g) Una cuestión de forma, ya conocida: en los objetivos están ausentes todos sus puntos finales. ¿Qué tal 'inestimable' en lugar de 'invaluable'? Las mayúsculas después de los dos puntos no son demasiado correctas.
+
+
+h) No entiendo por qué se considera 1808 el período de mayor actividad con 20 anuncios, si en 1828 hubo 22. Además, en el primer caso aparece el porcentaje sobre el total y en los otros datos no se proporciona.
+
+
+Se opta por generar una hoja de cálculo con los campor mínimos, se eliminan la transcripción, numerós de página, números del pdf, identificador del ejemplar. Reduciendo el contexto en el que se focaliza la IA se crea una segunda versión de paper.
