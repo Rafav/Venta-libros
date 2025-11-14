@@ -447,7 +447,7 @@ Se publica la muestra a validar en GitHub Pages, plataforma que permite alojar s
 
 ## 9. Exportación a hoja de cálculo.
 
-Se ha creado un *script* (pequeño programa) que une los hallazgos y genera una [hoja de cálculo](libros_completo.csv) para ayudar al análisis de los hallazgos. 
+Se ha creado un *script* (pequeño programa) que une los hallazgos y genera una [hoja de cálculo](analisis/libros_completo.csv) para ayudar al análisis de los hallazgos. 
 
 ## 10. Análisis por IA
 
@@ -474,4 +474,4 @@ g) Una cuestión de forma, ya conocida: en los objetivos están ausentes todos s
 h) No entiendo por qué se considera 1808 el período de mayor actividad con 20 anuncios, si en 1828 hubo 22. Además, en el primer caso aparece el porcentaje sobre el total y en los otros datos no se proporciona.
 
 
-Se opta por generar una hoja de cálculo con los campor mínimos, se eliminan la transcripción, numerós de página, números del pdf, identificador del ejemplar. Reduciendo el contexto en el que se focaliza la IA se crea [una segunda versión de paper](analisis/v02/paper_v02.pdf).
+Se opta por generar una [hoja de cálculo con los campos mínimos]((analisis/libros_completo_campos_minimos.csv), se eliminan la transcripción, numerós de página, números del pdf, identificador del ejemplar. Reduciendo el contexto en el que se focaliza la IA se crea [una segunda versión del paper](analisis/v02/paper_v02.pdf).
