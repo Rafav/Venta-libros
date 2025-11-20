@@ -1,0 +1,83 @@
+{
+  "día_periódico": "20/03/1807",
+  "hallazgos": [
+    {
+      "autor": null,
+      "traductor": null,
+      "título": "Minerva",
+      "número_de_tomos": null,
+      "formato": null,
+      "encuadernación": null,
+      "precio": null,
+      "lugares_de_venta": "Despacho principal del Diario Mercantil, calle del Molino núm 65 quarto entrsuelo",
+      "página_pdf": 3,
+      "página_periódico": 315,
+      "transcripción": "En el Despacho principal del Diario Mercantil, calle del Molino núm 65 quarto entrsuelo, se hayan dos juegos completos del Periódico, Minerva que se publica en Madrid dos veces cada semana"
+    },
+    {
+      "autor": null,
+      "traductor": null,
+      "título": "Revisor General",
+      "número_de_tomos": "quatro tomos",
+      "formato": null,
+      "encuadernación": null,
+      "precio": "15 rs. cada tomo, más 2 rs. por tomo por portes",
+      "lugares_de_venta": "Despacho principal del Diario Mercantil, calle del Molino núm 65 quarto entrsuelo",
+      "página_pdf": 4,
+      "página_periódico": 316,
+      "transcripción": "Los siete tomos publicados son quatro con el titulo de Revisor General. Los precios son de 15 rs. cada tomo por el Revisor General, á lo que se ha de añadir 2 rs. por tomo, por los portes. Se vende en el Despacho principal del Diario Mercantil, calle del Molino núm 65 quarto entrsuelo."
+    },
+    {
+      "autor": null,
+      "traductor": null,
+      "título": "Quadro de la Europa",
+      "número_de_tomos": "un tomo",
+      "formato": null,
+      "encuadernación": null,
+      "precio": "20 rs., más 2 rs. por tomo por portes",
+      "lugares_de_venta": "Despacho principal del Diario Mercantil, calle del Molino núm 65 quarto entrsuelo",
+      "página_pdf": 4,
+      "página_periódico": 316,
+      "transcripción": "uno del Quadro de la Europa; de estos tres últimos, se podrá vender separadamente lo que quisieren. Los precios son 20 por cada uno de los otros tres, á lo que se ha de añadir 2 rs. por tomo, por los portes. Se vende en el Despacho principal del Diario Mercantil, calle del Molino núm 65 quarto entrsuelo."
+    },
+    {
+      "autor": null,
+      "traductor": null,
+      "título": "Cartas Atenienses",
+      "número_de_tomos": "un tomo",
+      "formato": null,
+      "encuadernación": null,
+      "precio": "20 rs., más 2 rs. por tomo por portes",
+      "lugares_de_venta": "Despacho principal del Diario Mercantil, calle del Molino núm 65 quarto entrsuelo",
+      "página_pdf": 4,
+      "página_periódico": 316,
+      "transcripción": "uno de las Cartas Atenienses; de estos tres últimos, se podrá vender separadamente lo que quisieren. Los precios son 20 por cada uno de los otros tres, á lo que se ha de añadir 2 rs. por tomo, por los portes. Se vende en el Despacho principal del Diario Mercantil, calle del Molino núm 65 quarto entrsuelo."
+    },
+    {
+      "autor": null,
+      "traductor": null,
+      "título": "Londres y los Ingleses",
+      "número_de_tomos": "un tomo",
+      "formato": null,
+      "encuadernación": null,
+      "precio": "20 rs., más 2 rs. por tomo por portes",
+      "lugares_de_venta": "Despacho principal del Diario Mercantil, calle del Molino núm 65 quarto entrsuelo",
+      "página_pdf": 4,
+      "página_periódico": 316,
+      "transcripción": "uno de Londres y los Ingleses; de estos tres últimos, se podrá vender separadamente lo que quisieren. Los precios son 20 por cada uno de los otros tres, á lo que se ha de añadir 2 rs. por tomo, por los portes. Se vende en el Despacho principal del Diario Mercantil, calle del Molino núm 65 quarto entrsuelo."
+    },
+    {
+      "autor": "Akerlio Rapsodia",
+      "traductor": null,
+      "título": "Ensayo de una historia de las Pelucas, de los Peluquines, y de los Pelucones &c.",
+      "número_de_tomos": null,
+      "formato": null,
+      "encuadernación": null,
+      "precio": "5 rs. y uno de porte",
+      "lugares_de_venta": "Despacho principal del Diario Mercantil, calle del Molino núm 65 quarto entrsuelo",
+      "página_pdf": 4,
+      "página_periódico": 316,
+      "transcripción": "Tambien hay tomito titulado Ensayo de una historia de las Pelucas, de los Peluquines, y de los Pelucones &c., dedicada à D. Torbellino Polvareda, por el Doctor Akerlio Rapsodia à 5 rs. y uno de porte."
+    }
+  ]
+}

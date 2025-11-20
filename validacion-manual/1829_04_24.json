@@ -1,0 +1,31 @@
+{
+  "día_periódico": "24/04/1829",
+  "hallazgos": [
+    {
+      "autor": null,
+      "traductor": null,
+      "título": "Reglamento para el puerto franco de Cadiz",
+      "número_de_tomos": null,
+      "formato": null,
+      "encuadernación": null,
+      "precio": null,
+      "lugares_de_venta": "imprenta Gaditana, plazuela del Palillero, y en los despachos de Aparicio, calle de S. Francisco; de la viuda de Navarro, plazuela de S. Agustin; y de Vazquez, calle de la Pelota",
+      "página_pdf": 6,
+      "página_periódico": 6,
+      "transcripción": "El Reglamento para el puerto franco de Cadiz, impreso en papel fino para remitir al estrangero, se halla de venta en la imprenta Gaditana, plazuela del Palillero, y en los despachos de Aparicio, calle de S. Francisco; de la viuda de Navarro, plazuela de S. Agustin; y de Vazquez, calle de la Pelota."
+    },
+    {
+      "autor": "Roche y Sanson",
+      "traductor": null,
+      "título": "Nuevos elementos de patologia medico-quirurgica ó compendio teorico-practico de medicina y cirugia",
+      "número_de_tomos": "cinco tomos",
+      "formato": "8.º",
+      "encuadernación": null,
+      "precio": null,
+      "lugares_de_venta": "libreria de Hortal y Compañía, plazuela de San Agustin",
+      "página_pdf": 6,
+      "página_periódico": 6,
+      "transcripción": "Nuevos elementos de patologia medico-quirurgica ó compendio teorico-practico de medicina y cirugia, escrito en francés por Roche y Sanson, y traducido al castellano, en cinco tomos en 8.º Se hallará en la libreria de Hortal y Compañía, plazuela de San Agustin."
+    }
+  ]
+}

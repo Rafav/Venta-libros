@@ -1,0 +1,83 @@
+{
+  "día_periódico": "26/07/1823",
+  "hallazgos": [
+    {
+      "autor": "Say",
+      "traductor": null,
+      "título": "Tratado de economía política",
+      "número_de_tomos": "dos tomos",
+      "formato": "8.º prolongado",
+      "encuadernación": "rustica",
+      "precio": "80 rs.",
+      "lugares_de_venta": "librería de los herederos de Bertran calle de S. Francisco num. 45",
+      "página_pdf": 4,
+      "página_periódico": 2347,
+      "transcripción": "Tratado de economía política por Say, tercera edicion en Paris año 1817, dos tomos en 8.º prolongado en rustica, su precio 80 rs. Se hallan de venta en la librería de los herederos de Bertran calle de S. Francisco num. 45."
+    },
+    {
+      "autor": "Prepsan",
+      "traductor": null,
+      "título": "Estenografia exacta",
+      "número_de_tomos": "un tomo",
+      "formato": "8.º",
+      "encuadernación": "rustica",
+      "precio": "50 rs.",
+      "lugares_de_venta": "librería de los herederos de Bertran calle de S. Francisco num. 45",
+      "página_pdf": 4,
+      "página_periódico": 2347,
+      "transcripción": "Estenografia exacta por Prepsan, tercera edicion en Paris año 1817, un tomo en 8.º en rustica 50 rs. Se hallan de venta en la librería de los herederos de Bertran calle de S. Francisco num. 45."
+    },
+    {
+      "autor": "Thevenot",
+      "traductor": null,
+      "título": "Compendio de taquigrafia",
+      "número_de_tomos": null,
+      "formato": "12.º",
+      "encuadernación": null,
+      "precio": "18 rs.",
+      "lugares_de_venta": "librería de los herederos de Bertran calle de S. Francisco num. 45",
+      "página_pdf": 4,
+      "página_periódico": 2347,
+      "transcripción": "Compendio de taquigrafia por Thevenot, segunda ediccion en Paris año 1810, cuaderno en 12.º 18 rs. Se hallan de venta en la librería de los herederos de Bertran calle de S. Francisco num. 45."
+    },
+    {
+      "autor": "Vidat",
+      "traductor": null,
+      "título": "Notografia",
+      "número_de_tomos": "un tomo",
+      "formato": "4.º",
+      "encuadernación": "rustica",
+      "precio": "60 rs.",
+      "lugares_de_venta": "librería de los herederos de Bertran calle de S. Francisco num. 45",
+      "página_pdf": 4,
+      "página_periódico": 2347,
+      "transcripción": "Notografia por Vidat en Paris año 1819, un tomo en 4.º rustica 60 rs. Se hallan de venta en la librería de los herederos de Bertran calle de S. Francisco num. 45."
+    },
+    {
+      "autor": "Delavigne",
+      "traductor": null,
+      "título": "Las visperas sicilianas",
+      "número_de_tomos": null,
+      "formato": null,
+      "encuadernación": null,
+      "precio": "12 rs.",
+      "lugares_de_venta": "librería de los herederos de Bertran calle de S. Francisco num. 45",
+      "página_pdf": 4,
+      "página_periódico": 2347,
+      "transcripción": "Las visperas sicilianas tragedia en 5 actos por Delavigne en Paris año 1820 12 rs. Se hallan de venta en la librería de los herederos de Bertran calle de S. Francisco num. 45."
+    },
+    {
+      "autor": "Ancelot",
+      "traductor": null,
+      "título": "Luis IX",
+      "número_de_tomos": null,
+      "formato": null,
+      "encuadernación": null,
+      "precio": "12 rs.",
+      "lugares_de_venta": "librería de los herederos de Bertran calle de S. Francisco num. 45",
+      "página_pdf": 4,
+      "página_periódico": 2347,
+      "transcripción": "Luis IX tragedia en 5 actos por Ancelot en Paris año 1819 12 rs. Se hallan de venta en la librería de los herederos de Bertran calle de S. Francisco num. 45."
+    }
+  ]
+}
